@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spilbibliotek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Spilbibliotek</h1>
+        <p>Find det perfekte spil til din næste spilleaften.</p>
+    </header>
+
+    <main>
+
+        <!-- SØGNING -->
+        <section class="search-section">
+            <h2>Find et spil</h2>
+
+            <div class="search-bar">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Søg efter et spil..."
+                >
+                <button id="searchButton">Søg</button>
+            </div>
+        </section>
+
+        <!-- FILTRE -->
+        <section class="filters">
+
+            <h2>Filtrér spil</h2>
+
+            <!-- GENRE -->
+            <div class="filter-group">
+                <h3>Genre</h3>
+
+                <label>
+                    <input type="checkbox" name="genre" value="Brætspil">
+                    Brætspil
+                </label>
+
+                <label>
+                    <input type="checkbox" name="genre" value="Kortspil">
+                    Kortspil
+                </label>
+
+                <label>
+                    <input type="checkbox" name="genre" value="Selskabsspil">
+                    Selskabsspil
+                </label>
+
+                <label>
+                    <input type="checkbox" name="genre" value="Strategi">
+                    Strategi
+                </label>
+
+                <label>
+                    <input type="checkbox" name="genre" value="Quiz">
+                    Quiz
+                </label>
+
+                <label>
+                    <input type="checkbox" name="genre" value="Terningespil">
+                    Terningespil
+                </label>
+            </div>
+
+            <!-- SVÆRHEDSGRAD -->
+            <div class="filter-group">
+                <h3>Sværhedsgrad</h3>
+
+                <label>
+                    <input type="radio" name="difficulty" value="Alle" checked>
+                    Alle
+                </label>
+
+                <label>
+                    <input type="radio" name="difficulty" value="Let">
+                    Let
+                </label>
+
+                <label>
+                    <input type="radio" name="difficulty" value="Medium">
+                    Medium
+                </label>
+
+                <label>
+                    <input type="radio" name="difficulty" value="Svært">
+                    Svært
+                </label>
+            </div>
+
+            <!-- SPILLETID -->
+            <div class="filter-group">
+                <h3>Maksimal spilletid</h3>
+
+                <input
+                    type="range"
+                    id="playtimeFilter"
+                    min="20"
+                    max="90"
+                    value="90"
+                    step="10"
+                >
+
+                <p>
+                    Maks. <span id="playtimeValue">90</span> minutter
+                </p>
+            </div>
+
+        </section>
+
+        <!-- SPILOVERSIGT -->
+        <section class="games-section">
+
+            <div class="games-heading">
+                <h2>Alle spil</h2>
+
+                <select id="sortSelect">
+                    <option value="title">Titel A-Å</option>
+                    <option value="playtime">Korteste spilletid</option>
+                    <option value="playtime-desc">Længste spilletid</option>
+                </select>
+            </div>
+
+            <div id="gameList" class="game-grid">
+                <!-- Spillene indsættes med JavaScript -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="games.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
