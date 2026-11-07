@@ -31,7 +31,6 @@
 
             <div class="filter-group">
                 <h3>Genre</h3>
-
                 <label><input type="checkbox" name="genre" value="Brætspil"> Brætspil</label>
                 <label><input type="checkbox" name="genre" value="Kortspil"> Kortspil</label>
                 <label><input type="checkbox" name="genre" value="Selskabsspil"> Selskabsspil</label>
@@ -42,7 +41,6 @@
 
             <div class="filter-group">
                 <h3>Sværhedsgrad</h3>
-
                 <label><input type="radio" name="difficulty" value="Alle" checked> Alle</label>
                 <label><input type="radio" name="difficulty" value="Let"> Let</label>
                 <label><input type="radio" name="difficulty" value="Medium"> Medium</label>
@@ -51,26 +49,22 @@
 
             <div class="filter-group">
                 <h3>Maksimal spilletid</h3>
-
                 <input
                     type="range"
                     id="playtimeFilter"
                     min="20"
-                    max="90"
-                    value="90"
+                    max="180"
+                    value="180"
                     step="10"
                 >
-
-                <p>Maks. <span id="playtimeValue">90</span> minutter</p>
+                <p>Maks. <span id="playtimeValue">180</span> minutter</p>
             </div>
         </section>
 
         <section class="games-section">
             <div class="games-heading">
-                <h2>Spiloversigt</h2>
-
-                <label for="sortSelect">Sortér:</label>
-                <select id="sortSelect">
+                <h2>Alle spil</h2>
+                <select id="sortSelect" aria-label="Sortér spil">
                     <option value="title">Titel A-Å</option>
                     <option value="playtime">Korteste spilletid</option>
                     <option value="playtime-desc">Længste spilletid</option>
