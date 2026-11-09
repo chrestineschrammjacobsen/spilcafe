@@ -39,4 +39,10 @@ const gameList = document.getElementById("gameList");
     });
 }
 
+// Lyt efter ændringer i genre-checkboxes
+document.querySelectorAll('input[name="genre"]').forEach(checkbox => {
+    checkbox.addEventListener("change", displayGames);
+});
+
+// Vis alle spil fra starten
 displayGames();
