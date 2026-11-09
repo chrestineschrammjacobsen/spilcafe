@@ -5,15 +5,20 @@ const games = [
         difficulty: "Let",
         playtime: 30,
         minPlayers: 2,
-        maxPlayers: 4
+        maxPlayers: 4,
+        image: "img/ludo.png"
     },
+
+
+    
     {
         title: "UNO",
         genre: "Kortspil",
         difficulty: "Let",
         playtime: 20,
         minPlayers: 2,
-        maxPlayers: 10
+        maxPlayers: 10,
+        image: "img/uno.webp"
     },
     {
         title: "Partners",
@@ -37,7 +42,8 @@ const games = [
         difficulty: "Medium",
         playtime: 30,
         minPlayers: 2,
-        maxPlayers: 12
+        maxPlayers: 12,
+        image: "img/sequence.jpg"
     },
     {
         title: "Det dårlige selskab",
@@ -53,7 +59,8 @@ const games = [
         difficulty: "Medium",
         playtime: 60,
         minPlayers: 2,
-        maxPlayers: 5
+        maxPlayers: 5,
+        image: "img/ticket-to-ride.jpg"
     },
     {
         title: "Matador",
@@ -61,7 +68,8 @@ const games = [
         difficulty: "Medium",
         playtime: 120,
         minPlayers: 2,
-        maxPlayers: 6
+        maxPlayers: 6,
+        image: "img/matador.webp"
     },
     {
         title: "Kortspil",
@@ -69,7 +77,8 @@ const games = [
         difficulty: "Let",
         playtime: 30,
         minPlayers: 2,
-        maxPlayers: 6
+        maxPlayers: 6,
+        image: "img/kortspil.jpg"
     },
     {
         title: "Bezzerwizzer",
@@ -77,7 +86,8 @@ const games = [
         difficulty: "Medium",
         playtime: 45,
         minPlayers: 2,
-        maxPlayers: 4
+        maxPlayers: 4,
+        image: "img/bezzerwisser.webp"
     },
     {
         title: "Trivial Pursuit",

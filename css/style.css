@@ -152,10 +152,24 @@ input[type="range"] {
 }
 
 .game-card {
+    display: flex;
+    align-items: stretch;
     background-color: #FEC076;
-    padding: clamp(1rem, 2vw, 1.375rem);
     border-radius: 0.625rem;
     border: 1px solid #e5e3da;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.game-info {
+    width: 66.67%;
+    padding: clamp(1rem, 2vw, 1.375rem);
+}
+
+.game-card img {
+    width: 33.33%;
+    object-fit: cover;
+    display: block;
     min-width: 0;
 }
 
