@@ -8,8 +8,6 @@ const games = [
         maxPlayers: 4,
         image: "img/ludo.png"
     },
-
-
     
     {
         title: "UNO",
