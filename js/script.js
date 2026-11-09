@@ -35,7 +35,9 @@ const gameList = document.getElementById("gameList");
         <p>Antal spillere: ${game.minPlayers}-${game.maxPlayers ?? "flere"}</p>
     </div>
 
+    <div class="game-image">
     <img src="${game.image}" alt="${game.title}">
+    </div>
 `;
         gameList.appendChild(gameCard);
 

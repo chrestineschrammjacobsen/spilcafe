@@ -163,14 +163,22 @@ input[type="range"] {
 
 .game-info {
     width: 66.67%;
-    padding: clamp(1rem, 2vw, 1.375rem);
+    padding: 1.375rem;
 }
 
-.game-card img {
+.game-image {
     width: 33.33%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
-    min-width: 0;
 }
 
 .game-card h3 {
