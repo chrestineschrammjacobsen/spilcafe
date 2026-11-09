@@ -10,6 +10,16 @@ const gameList = document.getElementById("gameList");
 
     gameList.innerHTML = "";
 
+    // Filtrer spillene
+    const filteredGames = games.filter(game => {
+
+        const genreMatch =
+            selectedGenres.length === 0 ||
+            selectedGenres.includes(game.genre);
+
+        return genreMatch;
+    });
+
     games.forEach(game => {
 
         const gameCard = document.createElement("div");
