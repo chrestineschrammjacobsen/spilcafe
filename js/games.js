@@ -24,7 +24,8 @@ const games = [
         difficulty: "Medium",
         playtime: 45,
         minPlayers: 2,
-        maxPlayers: 4
+        maxPlayers: 4,
+        
     },
     {
         title: "HINT",
