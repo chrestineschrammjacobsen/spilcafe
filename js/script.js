@@ -1,11 +1,27 @@
 const gameList = document.getElementById("gameList");
 
-// Vis alle spil
-function displayGames() {
+    // Vis spil baseret på valgte filtre
+    function displayGames() {
+
+    // Find valgte genrer
+    const selectedGenres = Array.from(
+        document.querySelectorAll('input[name="genre"]:checked')
+    ).map(checkbox => checkbox.value);
 
     gameList.innerHTML = "";
 
-    games.forEach(game => {
+    // Filtrer spillene
+    const filteredGames = games.filter(game => {
+
+        const genreMatch =
+            selectedGenres.length === 0 ||
+            selectedGenres.includes(game.genre);
+
+        return genreMatch;
+    });
+
+    // Vis spillene
+    filteredGames.forEach(game => {
 
         const gameCard = document.createElement("div");
         gameCard.classList.add("game-card");
@@ -23,4 +39,10 @@ function displayGames() {
     });
 }
 
+// Lyt efter ændringer i genre-checkboxes
+document.querySelectorAll('input[name="genre"]').forEach(checkbox => {
+    checkbox.addEventListener("change", displayGames);
+});
+
+// Vis alle spil fra starten
 displayGames();

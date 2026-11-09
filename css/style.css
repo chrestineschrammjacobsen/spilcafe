@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f0ed;
@@ -17,11 +18,15 @@ body {
 /* HEADER */
 
 header {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
     text-align: center;
     margin-bottom: clamp(2rem, 5vw, 3.125rem);
 }
 
 header h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
     font-size: clamp(1.8rem, 4vw, 2.625rem);
     margin-bottom: 0.625rem;
 }
@@ -33,11 +38,15 @@ header p {
 /* OVERSKRIFTER */
 
 h2 {
-     font-size: clamp(1.1rem, 2vw, 1.375rem);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.1rem, 2vw, 1.375rem);
     margin-bottom: 1.25rem;
 }
 
 h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
     font-size: 1rem;
     margin-bottom: 0.75rem;
 }
@@ -128,7 +137,7 @@ input[type="range"] {
 
 .games-heading select {
     padding: 0.625rem;
-    border: 1px solid #d5d4ca;
+    border: 1px solid #000000;
     border-radius: 0.375rem;
     background-color: white;
 }
@@ -150,8 +159,12 @@ input[type="range"] {
 }
 
 .game-card h3 {
-    font-size: 1.1875rem;
-    margin-bottom: 0.75rem;
+    font-family: 'Ubuntu', sans-serif;
+      font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+   
+
 }
 
 .game-card p {
