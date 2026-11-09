@@ -10,8 +10,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #FCF8EE;
-    color: black;
+    background-color: #f5f0ed;
+    color: #292d26;
     padding: clamp(1rem, 4vw, 2.5rem);
 }
 
