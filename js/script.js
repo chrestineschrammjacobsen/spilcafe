@@ -20,7 +20,8 @@ const gameList = document.getElementById("gameList");
         return genreMatch;
     });
 
-    games.forEach(game => {
+    // Vis spillene
+    filteredGames.forEach(game => {
 
         const gameCard = document.createElement("div");
         gameCard.classList.add("game-card");
