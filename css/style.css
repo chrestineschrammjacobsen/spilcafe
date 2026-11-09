@@ -137,7 +137,7 @@ input[type="range"] {
 
 .games-heading select {
     padding: 0.625rem;
-    border: 1px solid #d5d4ca;
+    border: 1px solid #000000;
     border-radius: 0.375rem;
     background-color: white;
 }

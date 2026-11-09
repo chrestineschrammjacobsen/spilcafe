@@ -1,7 +1,12 @@
 const gameList = document.getElementById("gameList");
 
-// Vis alle spil
-function displayGames() {
+    // Vis spil baseret på valgte filtre
+    function displayGames() {
+
+    // Find valgte genrer
+    const selectedGenres = Array.from(
+        document.querySelectorAll('input[name="genre"]:checked')
+    ).map(checkbox => checkbox.value);
 
     gameList.innerHTML = "";
 
