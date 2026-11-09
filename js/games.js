@@ -25,7 +25,7 @@ const games = [
         playtime: 45,
         minPlayers: 2,
         maxPlayers: 4,
-        
+        image: "img/partners.svg"
     },
     {
         title: "HINT",
@@ -33,7 +33,8 @@ const games = [
         difficulty: "Let",
         playtime: 45,
         minPlayers: 4,
-        maxPlayers: 10
+        maxPlayers: 10,
+        image: "img/hint.png"
     },
     {
         title: "Sequence",
@@ -50,7 +51,8 @@ const games = [
         difficulty: "Let",
         playtime: 45,
         minPlayers: 3,
-        maxPlayers: 10
+        maxPlayers: 10,
+        image: "img/det-doerlige-selskab.png"
     },
     {
         title: "Ticket to Ride",
@@ -94,7 +96,9 @@ const games = [
         difficulty: "Medium",
         playtime: 60,
         minPlayers: 2,
-        maxPlayers: 6
+        maxPlayers: 6,
+        image: "img/trivial-pursuit.webp"
+    
     },
     {
         title: "YATZY",
@@ -102,6 +106,7 @@ const games = [
         difficulty: "Let",
         playtime: 30,
         minPlayers: 2,
-        maxPlayers: 6
+        maxPlayers: 6,
+        image: "img/yatzy.png"
     }
 ];
