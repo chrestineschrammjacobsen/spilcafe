@@ -13,6 +13,8 @@ body {
     background-color: #f5f0ed;
     color: #292d26;
     padding: clamp(1rem, 4vw, 2.5rem);
+
+
 }
 
 /* HEADER */
@@ -195,6 +197,16 @@ input[type="range"] {
     color: black;
     margin-bottom: 0.4375rem;
 }
+/* baggrund*/
+.baggrund {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
 /* MOBILVENLIGT DESIGN */
 
@@ -225,3 +237,4 @@ input[type="range"] {
     }
 
 }
+
