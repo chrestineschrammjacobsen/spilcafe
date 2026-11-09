@@ -20,7 +20,7 @@ const games = [
         genre: "Brætspil",
         difficulty: "Medium",
         playtime: 45,
-        minPlayers: 4,
+        minPlayers: 2,
         maxPlayers: 4
     },
     {
